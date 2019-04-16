@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  margin: 1em 4em;
 }
 
 .App-logo {
@@ -30,4 +31,16 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.ql-editor {
+  min-height: 18em;
+}
+
+.quill-output {
+  color: white;
+  background-color: #283593;
+  margin-top: 1em;
+  padding: 1em;
+  border-radius: 1em;
 }

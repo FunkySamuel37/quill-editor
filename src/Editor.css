@@ -1,0 +1,19 @@
+.logical-block {
+  background: #fff59d;
+}
+
+.quill-variable {
+  background: #c8e6c9;
+  margin: 0 0.2em;
+}
+
+.ql-editor {
+  font-size: 14pt;
+}
+
+.logical-block::before {
+  display: block;
+  content: attr(data-condition)" : "attr(data-expression);
+  color: #a1a1a1;
+  font-size: .78em;
+}
