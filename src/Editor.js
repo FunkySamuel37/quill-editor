@@ -95,6 +95,10 @@ class Editor extends Component {
     const handlebarsText = this.outputHandlebars(this.state.text)
     return (
       <div>
+        <div className="action-group">
+          <button onClick={this.handleInsertVar}>insert variable</button>
+          <button onClick={this.handleWrapCondition}>wrap condition</button>
+        </div>
         <ReactQuill
           ref={(el) => this.quillRef = el}
           defaultValue={this.state.text}
@@ -102,10 +106,6 @@ class Editor extends Component {
           theme={'snow'}
           modules={modulesOptions}
         />
-        <div className="action-group">
-          <button onClick={this.handleInsertVar}>insert variable</button>
-          <button onClick={this.handleWrapCondition}>wrap condition</button>
-        </div>
         <div className="quill-output">{this.state.text}</div>
         <div className="quill-output">{handlebarsText}</div>
       </div>

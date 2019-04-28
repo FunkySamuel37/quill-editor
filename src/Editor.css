@@ -17,3 +17,8 @@
   color: #a1a1a1;
   font-size: .78em;
 }
+
+.ql-toolbar.ql-snow + .ql-container.ql-snow {
+  height: 700px;
+  overflow: scroll;
+}
